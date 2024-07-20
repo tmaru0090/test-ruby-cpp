@@ -1,0 +1,9 @@
+
+export PATH="/mingw32/bin:$PATH"
+export PATH="/mingw64/bin:$PATH"
+
+gcc -o main main.c -IC:/Users/tanukimaru/use-bin/ruby/Ruby32-x64/include/ruby-3.2.0 -IC:/Users/tanukimaru/use-bin/ruby/Ruby32-x64/include/x64-mingw32 -IC:/Users/tanukimaru/use-bin/ruby/Ruby32-x64/include/ruby-3.2.0/x64-mingw-ucrt/ C:/Users/tanukimaru/use-bin/ruby/Ruby32-x64/lib/libx64-ucrt-ruby320.dll.a
+
+
+gcc -o main main.c -IC:/Users/tanukimaru/use-bin/ruby/Ruby32-x64/include/ruby-3.2.0/x64-mingw-ucrt/ -lruby320
+ gcc -o main main.c -I/usr/include/ruby-3.0.0/  $(pkg-config --cflags --libs ruby)
